@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo - Imperial Motors</title>
+    <meta name="description" content="Explore nossa exclusiva coleção de automóveis de luxo e superesportivos. Ferrari, Rolls-Royce, Porsche, Aston Martin e muito mais.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">Imperial <span>Motors</span></a>
+            
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Início</a></li>
+                <li><a href="sobre.html" class="nav-link">Sobre</a></li>
+                <li><a href="catalogo.html" class="nav-link active">Catálogo</a></li>
+                <li><a href="esg.html" class="nav-link">ESG</a></li>
+                <li><a href="contato.html" class="nav-link">Contato</a></li>
+                <li><a href="compra.html" class="nav-link">Simular Compra</a></li>
+            </ul>
+            
+            <div class="mobile-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main style="margin-top: 80px;">
+        <section class="hero" style="height: 60vh; background: var(--gradient-luxury);">
+            <div class="hero-content" style="grid-template-columns: 1fr;">
+                <div class="hero-text" style="text-align: center; max-width: 800px; margin: 0 auto;">
+                    <h1>Catálogo <span class="highlight">Exclusivo</span></h1>
+                    <p>Descubra nossa seleção cuidadosamente curada dos automóveis mais extraordinários do mundo, disponíveis para aquisição imediata.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-header">
+                <h2 class="section-title">Veículos <span style="color: var(--accent-gold);">Disponíveis</span></h2>
+                <p class="section-subtitle">Cada veículo passa por rigoroso processo de certificação e autenticação, garantindo procedência e qualidade excepcionais.</p>
+            </div>
+
+            <div class="featured-cars">
+                <!-- Ferrari SF90 Stradale -->
+                <div class="car-card">
+                    <div class="car-image">
+                        <img src="imagens/ferrari-sf90.jpg" alt="Ferrari SF90 Stradale" onerror="this.style.display='none'; this.parentElement.innerHTML='<div style=&quot;display:flex; align-items:center; justify-content:center; width:100%; height:100%; font-size:4rem; color:#D4AF37;&quot;>🏎️</div>';">
+                        <div style="position: absolute; top: 1rem; right: 1rem; background: rgba(212, 175, 55, 0.9); color: white; padding: 0.5rem 1rem; border-radius: 20px; font-weight: 600; font-size: 0.85rem;">HÍBRIDO</div>
+                    </div>
+                    <div class="car-info">
+                        <h3 class="car-name">Ferrari SF90 Stradale</h3>
+                        <p class="car-specs">
+                            <strong>Motor:</strong> V8 4.0L Twin-Turbo + 3 Motores Elétricos<br>
+                            <strong>Potência:</strong> 1000 cv combinados<br>
+                            <strong>Torque:</strong> 800 Nm<br>
+                            <strong>Aceleração:</strong> 0-100 km/h em 2.5s<br>
+                            <strong>Velocidade Máxima:</strong> 340 km/h<br>
+                            <strong>Transmissão:</strong> Automática 8 velocidades<br>
+                            <strong>Ano:</strong> 2024 | <strong>Quilometragem:</strong> 0 km
+                        </p>
+                        <div class="car-price">R$ 6.200.000</div>
+                        <p style="font-size: 0.9rem; color: var(--text-light); margin-bottom: 1.5rem; font-style: italic;">
+                            *Preço inclui opcionais premium e custos de importação
+                        </p>
+                        <a href="compra.html" class="car-button">Simular Compra</a>
+                    </div>
+                </div>
+
+                <!-- Rolls-Royce Droptail -->
+                <div class="car-card">
+                    <div class="car-image">
+                        <img src="imagens/rolls-royce-droptail.jpg" alt="Rolls-Royce Droptail" onerror="this.style.display='none'; this.parentElement.innerHTML='<div style=&quot;display:flex; align-items:center; justify-content:center; width:100%; height:100%; font-size:4rem; color:#D4AF37;&quot;>🚗</div>';">
+                        <div style="position: absolute; top: 1rem; right: 1rem; background: rgba(153, 102, 255, 0.9); color: white; padding: 0.5rem 1rem; border-radius: 20px; font-weight: 600; font-size: 0.85rem;">ULTRA LIMITADO</div>
+                    </div>
+                    <div class="car-info">
+                        <h3 class="car-name">Rolls-Royce Droptail</h3>
+                        <p class="car-specs">
+                            <strong>Motor:</strong> V12 6.75L Twin-Turbo<br>
+                            <strong>Potência:</strong> 593 cv<br>
+                            <strong>Torque:</strong> 900 Nm<br>
+                            <strong>Aceleração:</strong> 0-100 km/h em 5.3s<br>
+                            <strong>Carroceria:</strong> Conversível 2 portas<br>
+                            <strong>Personalização:</strong> 100% exclusiva<br>
+                            <strong>Produção:</strong> Apenas 4 unidades mundiais<br>
+                            <strong>Ano:</strong> 2024 | <strong>Quilometragem:</strong> 0 km
+                        </p>
+                        <div class="car-price">R$ 125.000.000</div>
+                        <p style="font-size: 0.9rem; color: var(--text-light); margin-bottom: 1.5rem; font-style: italic;">
+                            *Obra-prima da engenharia britânica artesanal
+                        </p>
+                        <a href="compra.html" class="car-button">Simular Compra</a>
+                    </div>
+                </div>
+
+                <!-- Rolls-Royce Spectre -->
+                <div class="car-card">
+                    <div class="car-image">
+                        <img src="imagens/rolls-royce-spectre.jpg" alt="Rolls-Royce Spectre" onerror="this.style.display='none'; this.parentElement.innerHTML='<div style=&quot;display:flex; align-items:center; justify-content:center; width:100%; height:100%; font-size:4rem; color:#D4AF37;&quot;>⚡</div>';">
+                        <div style="position: absolute; top: 1rem; right: 1rem; background: rgba(76, 175, 80, 0.9); color: white; padding: 0.5rem 1rem; border-radius: 20px; font-weight: 600; font-size: 0.85rem;">100% ELÉTRICO</div>
+                    </div>
+                    <div class="car-info">
+                        <h3 class="car-name">Rolls-Royce Spectre</h3>
+                        <p class="car-specs">
+                            <strong>Motor:</strong> Totalmente elétrico (2 motores)<br>
+                            <strong>Potência:</strong> 577 cv<br>
+                            <strong>Torque:</strong> 900 Nm<br>
+                            <strong>Aceleração:</strong> 0-100 km/h em 4.5s<br>
+                            <strong>Autonomia:</strong> 520 km (WLTP)<br>
+                            <strong>Bateria:</strong> 102 kWh<br>
+                            <strong>Carregamento:</strong> 195 kW DC rápido<br>
+                            <strong>Ano:</strong> 2024 | <strong>Quilometragem:</strong> 0 km
+                        </p>
+                        <div class="car-price">R$ 7.500.000</div>
+                        <p style="font-size: 0.9rem; color: var(--text-light); margin-bottom: 1.5rem; font-style: italic;">
+                            *O primeiro Rolls-Royce totalmente elétrico da história
+                        </p>
+                        <a href="compra.html" class="car-button">Simular Compra</a>
+                    </div>
+                </div>
+
+                <!-- Porsche 911 GT3 RS Mansory -->
+                <div class="car-card">
+                    <div class="car-image">
+                        <img src="imagens/porsche-gt3rs.jpg" alt="Porsche 911 GT3 RS Mansory" onerror="this.style.display='none'; this.parentElement.innerHTML='<div style=&quot;display:flex; align-items:center; justify-content:center; width:100%; height:100%; font-size:4rem; color:#D4AF37;&quot;>🏁</div>';">
+                        <div style="position: absolute; top: 1rem; right: 1rem; background: rgba(255, 152, 0, 0.9); color: white; padding: 0.5rem 1rem; border-radius: 20px; font-weight: 600; font-size: 0.85rem;">MANSORY</div>
+                    </div>
+                    <div class="car-info">
+                        <h3 class="car-name">Porsche 911 GT3 RS Mansory</h3>
+                        <p class="car-specs">
+                            <strong>Motor:</strong> Boxer 6 cilindros 4.0L aspirado<br>
+                            <strong>Potência:</strong> 525 cv (Mansory tune)<br>
+                            <strong>Torque:</strong> 465 Nm<br>
+                            <strong>Aceleração:</strong> 0-100 km/h em 3.0s<br>
+                            <strong>Velocidade Máxima:</strong> 296 km/h<br>
+                            <strong>Transmissão:</strong> PDK 7 velocidades<br>
+                            <strong>Aerodinâmica:</strong> Mansory Carbon Package<br>
+                            <strong>Ano:</strong> 2024 | <strong>Quilometragem:</strong> 0 km
+                        </p>
+                        <div class="car-price">R$ 3.820.500</div>
+                        <p style="font-size: 0.9rem; color: var(--text-light); margin-bottom: 1.5rem; font-style: italic;">
+                            *Personalização exclusiva Mansory com fibra de carbono
+                        </p>
+                        <a href="compra.html" class="car-button">Simular Compra</a>
+                    </div>
+                </div>
+
+                <!-- Aston Martin Valkyrie -->
+                <div class="car-card">
+                    <div class="car-image">
+                        <img src="imagens/aston-valkyrie.jpg" alt="Aston Martin Valkyrie" onerror="this.style.display='none'; this.parentElement.innerHTML='<div style=&quot;display:flex; align-items:center; justify-content:center; width:100%; height:100%; font-size:4rem; color:#D4AF37;&quot;>🚀</div>';">
+                        <div style="position: absolute; top: 1rem; right: 1rem; background: rgba(156, 39, 176, 0.9); color: white; padding: 0.5rem 1rem; border-radius: 20px; font-weight: 600; font-size: 0.85rem;">HYPERCAR</div>
+                    </div>
+                    <div class="car-info">
+                        <h3 class="car-name">Aston Martin Valkyrie</h3>
+                        <p class="car-specs">
+                            <strong>Motor:</strong> V12 6.5L aspirado + Motor elétrico<br>
+                            <strong>Potência:</strong> 1176 cv combinados<br>
+                            <strong>Torque:</strong> 900 Nm<br>
+                            <strong>Aceleração:</strong> 0-100 km/h em 2.5s<br>
+                            <strong>Velocidade Máxima:</strong> 402 km/h<br>
+                            <strong>Peso:</strong> 1030 kg<br>
+                            <strong>Downforce:</strong> 1800 kg a 300 km/h<br>
+                            <strong>Ano:</strong> 2024 | <strong>Quilometragem:</strong> 0 km
+                        </p>
+                        <div class="car-price">R$ 20.000.000</div>
+                        <p style="font-size: 0.9rem; color: var(--text-light); margin-bottom: 1.5rem; font-style: italic;">
+                            *Tecnologia derivada da Fórmula 1 desenvolvida com Red Bull Racing
+                        </p>
+                        <a href="compra.html" class="car-button">Simular Compra</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" style="background: var(--primary-color); margin: 6rem 0; padding: 6rem 2rem; border-radius: 30px;">
+            <div class="section-header">
+                <h2 class="section-title">Serviços <span style="color: var(--accent-gold);">Exclusivos</span></h2>
+                <p class="section-subtitle">Experiências premium que acompanham cada aquisição</p>
+            </div>
+
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-icon">🔍</div>
+                    <h3>Inspeção Técnica Completa</h3>
+                    <p>Análise minuciosa por técnicos certificados com relatório detalhado de 150 pontos de verificação.</p>
+                </div>
+
+                <div class="value-card">
+                    <div class="value-icon">📋</div>
+                    <h3>Certificação de Procedência</h3>
+                    <p>Documentação completa da história do veículo, garantindo autenticidade e transparência total.</p>
+                </div>
+
+                <div class="value-card">
+                    <div class="value-icon">🚚</div>
+                    <h3>Entrega VIP</h3>
+                    <p>Transporte especializado até sua residência com cerimônia de entrega personalizada.</p>
+                </div>
+
+                <div class="value-card">
+                    <div class="value-icon">🔧</div>
+                    <h3>Manutenção Premium</h3>
+                    <p>Programa de manutenção preventiva com técnicos especializados e peças originais.</p>
+                </div>
+
+                <div class="value-card">
+                    <div class="value-icon">🏎️</div>
+                    <h3>Test-Drive Exclusivo</h3>
+                    <p>Experiência de condução em ambiente controlado com instrutor especializado.</p>
+                </div>
+
+                <div class="value-card">
+                    <div class="value-icon">💎</div>
+                    <h3>Personalização</h3>
+                    <p>Consultoria para personalização e modificações exclusivas conforme seu gosto pessoal.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" style="background: linear-gradient(135deg, #2c2c2c 0%, #1a1a1a 100%); color: white; margin: 6rem 0; padding: 6rem 2rem; border-radius: 30px;">
+            <div class="section-header">
+                <h2 class="section-title" style="color: white;">Financiamento <span style="color: var(--accent-gold);">Premium</span></h2>
+                <p class="section-subtitle" style="color: rgba(255,255,255,0.8);">Soluções financeiras exclusivas para veículos de alto valor</p>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 3rem;">
+                <div class="value-card" style="background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.2);">
+                    <div class="value-icon">💳</div>
+                    <h3 style="color: white;">Parcelamento Flexível</h3>
+                    <p style="color: rgba(255,255,255,0.8);">Até 60x com taxas preferenciais e entrada personalizada conforme seu perfil.</p>
+                </div>
+
+                <div class="value-card" style="background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.2);">
+                    <div class="value-icon">🏦</div>
+                    <h3 style="color: white;">Parcerias Bancárias</h3>
+                    <p style="color: rgba(255,255,255,0.8);">Acordo com principais instituições financeiras para condições especiais.</p>
+                </div>
+
+                <div class="value-card" style="background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.2);">
+                    <div class="value-icon">🔄</div>
+                    <h3 style="color: white;">Troca Garantida</h3>
+                    <p style="color: rgba(255,255,255,0.8);">Programa de troca com avaliação justa do seu veículo atual.</p>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="contato.html" class="cta-button">
+                    Consultar Financiamento
+                    <span>💰</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="section" style="text-align: center;">
+            <h2 class="section-title">Pronto para realizar seu <span style="color: var(--accent-gold);">sonho</span>?</h2>
+            <p style="font-size: 1.2rem; color: var(--text-light); margin: 2rem 0 3rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+                Nossa equipe de especialistas está pronta para proporcionar uma experiência de aquisição única e memorável.
+            </p>
+            
+            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                <a href="compra.html" class="cta-button">
+                    Simular Compra
+                    <span>🛒</span>
+                </a>
+                <a href="contato.html" class="cta-button" style="background: transparent; color: var(--accent-gold); border: 2px solid var(--accent-gold);">
+                    Agendar Test-Drive
+                    <span>🏎️</span>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">Imperial <span>Motors</span></div>
+            <p class="footer-text">"Excelência sobre Rodas" - A mais exclusiva boutique automotiva da América Latina</p>
+            
+            <div class="footer-links">
+                <a href="sobre.html">Sobre</a>
+                <a href="catalogo.html">Catálogo</a>
+                <a href="esg.html">ESG</a>
+                <a href="contato.html">Contato</a>
+                <a href="compra.html">Simular Compra</a>
+            </div>
+            
+            <p style="margin-top: 2rem; opacity: 0.6; font-size: 0.9rem;">
+                © 2024 Imperial Motors. Todos os direitos reservados. | Avenida Europa, São Paulo - SP<br>
+                <em>Conteúdo fictício para fins educacionais</em>
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
