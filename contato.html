@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Imperial Motors</title>
+    <meta name="description" content="Entre em contato com a Imperial Motors. Showroom na Avenida Europa, São Paulo. Atendimento VIP personalizado para veículos de luxo.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">Imperial <span>Motors</span></a>
+            
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Início</a></li>
+                <li><a href="sobre.html" class="nav-link">Sobre</a></li>
+                <li><a href="catalogo.html" class="nav-link">Catálogo</a></li>
+                <li><a href="esg.html" class="nav-link">ESG</a></li>
+                <li><a href="contato.html" class="nav-link active">Contato</a></li>
+                <li><a href="compra.html" class="nav-link">Simular Compra</a></li>
+            </ul>
+            
+            <div class="mobile-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main style="margin-top: 80px;">
+        <section class="hero" style="height: 60vh; background: var(--gradient-luxury);">
+            <div class="hero-content" style="grid-template-columns: 1fr;">
+                <div class="hero-text" style="text-align: center; max-width: 800px; margin: 0 auto;">
+                    <h1>Entre em <span class="highlight">Contato</span></h1>
+                    <p>Nossos especialistas estão prontos para oferecer a experiência VIP que você merece. Atendimento personalizado e exclusivo.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="contact-info">
+                <div class="contact-card">
+                    <div class="contact-icon">📍</div>
+                    <h3>Nosso Showroom</h3>
+                    <p>
+                        <strong>Avenida Europa, 1500</strong><br>
+                        Jardim Europa<br>
+                        São Paulo - SP, 01449-000<br><br>
+                        <em>Showroom de 2.000m² com arquitetura sustentável</em>
+                    </p>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">📞</div>
+                    <h3>Atendimento VIP</h3>
+                    <p>
+                        <strong>+55 (11) 99999-9999</strong><br>
+                        Consultores especializados<br>
+                        Segunda a Sexta: 9h às 19h<br>
+                        Sábado: 9h às 17h<br><br>
+                        <em>Atendimento exclusivo por agendamento</em>
+                    </p>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">✉️</div>
+                    <h3>E-mail Executivo</h3>
+                    <p>
+                        <strong>atendimento@imperialmotors.com.br</strong><br><br>
+                        Resposta garantida em até 4 horas<br>
+                        Suporte especializado<br>
+                        Consultoria personalizada<br><br>
+                        <em>Canal direto com nossos especialistas</em>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-header">
+                <h2 class="section-title">Envie sua <span style="color: var(--accent-gold);">Mensagem</span></h2>
+                <p class="section-subtitle">Preencha o formulário e nossa equipe entrará em contato para oferecer atendimento personalizado</p>
+            </div>
+
+            <div class="form-container">
+                <form id="contactForm">
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                        <div class="form-group">
+                            <label for="contact-name">Nome Completo *</label>
+                            <input type="text" id="contact-name" name="name" required placeholder="Digite seu nome completo">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact-email">E-mail *</label>
+                            <input type="email" id="contact-email" name="email" required placeholder="seu@email.com">
+                        </div>
+                    </div>
+
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                        <div class="form-group">
+                            <label for="contact-phone">Telefone *</label>
+                            <input type="tel" id="contact-phone" name="phone" required placeholder="(11) 99999-9999">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact-city">Cidade</label>
+                            <input type="text" id="contact-city" name="city" placeholder="Sua cidade">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contact-subject">Assunto de Interesse *</label>
+                        <select id="contact-subject" name="subject" required>
+                            <option value="">Selecione o assunto</option>
+                            <option value="informacoes-gerais">Informações Gerais</option>
+                            <option value="agendamento-visita">Agendamento de Visita ao Showroom</option>
+                            <option value="test-drive">Agendamento de Test-Drive</option>
+                            <option value="consulta-veiculo">Consulta sobre Veículo Específico</option>
+                            <option value="financiamento">Opções de Financiamento</option>
+                            <option value="troca">Avaliação para Troca</option>
+                            <option value="pos-venda">Pós-Venda e Manutenção</option>
+                            <option value="personalizacao">Personalização e Opcionais</option>
+                            <option value="eventos">Eventos e Track Days</option>
+                            <option value="esg">Programas ESG</option>
+                            <option value="parcerias">Parcerias Corporativas</option>
+                            <option value="imprensa">Assessoria de Imprensa</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contact-vehicle">Veículo de Interesse (opcional)</label>
+                        <select id="contact-vehicle" name="vehicle">
+                            <option value="">Selecione o veículo (se aplicável)</option>
+                            <option value="ferrari-sf90">Ferrari SF90 Stradale</option>
+                            <option value="rolls-droptail">Rolls-Royce Droptail</option>
+                            <option value="rolls-spectre">Rolls-Royce Spectre</option>
+                            <option value="porsche-gt3rs">Porsche 911 GT3 RS Mansory</option>
+                            <option value="aston-valkyrie">Aston Martin Valkyrie</option>
+                            <option value="outro">Outro veículo</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contact-urgency">Urgência do Contato</label>
+                        <select id="contact-urgency" name="urgency">
+                            <option value="normal">Normal (até 24 horas)</option>
+                            <option value="urgente">Urgente (até 4 horas)</option>
+                            <option value="muito-urgente">Muito Urgente (até 1 hora)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contact-message">Mensagem *</label>
+                        <textarea id="contact-message" name="message" required placeholder="Descreva sua solicitação, dúvidas ou como podemos ajudá-lo..."></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contact-time">Melhor Horário para Contato</label>
+                        <select id="contact-time" name="contact-time">
+                            <option value="manha">Manhã (9h às 12h)</option>
+                            <option value="tarde">Tarde (12h às 18h)</option>
+                            <option value="noite">Noite (18h às 20h)</option>
+                            <option value="qualquer">Qualquer horário</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
