@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simular Compra - Imperial Motors</title>
+    <meta name="description" content="Simule a compra do seu veículo de luxo na Imperial Motors. Processo simples, seguro e personalizado para sua experiência exclusiva.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">Imperial <span>Motors</span></a>
+            
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Início</a></li>
+                <li><a href="sobre.html" class="nav-link">Sobre</a></li>
+                <li><a href="catalogo.html" class="nav-link">Catálogo</a></li>
+                <li><a href="esg.html" class="nav-link">ESG</a></li>
+                <li><a href="contato.html" class="nav-link">Contato</a></li>
+                <li><a href="compra.html" class="nav-link active">Simular Compra</a></li>
+            </ul>
+            
+            <div class="mobile-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main style="margin-top: 80px;">
+        <section class="hero" style="height: 60vh; background: var(--gradient-luxury);">
+            <div class="hero-content" style="grid-template-columns: 1fr;">
+                <div class="hero-text" style="text-align: center; max-width: 800px; margin: 0 auto;">
+                    <h1>Simulação de <span class="highlight">Compra</span></h1>
+                    <p>Complete o processo de simulação e nossa equipe de consultores exclusivos entrará em contato para finalizar todos os detalhes da sua aquisição.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-header">
+                <h2 class="section-title">Dados da <span style="color: var(--accent-gold);">Simulação</span></h2>
+                <p class="section-subtitle">Preencha suas informações para iniciarmos o processo de aquisição do seu veículo dos sonhos</p>
+            </div>
+
+            <div class="form-container">
+                <form id="purchaseForm">
+                    <div class="form-group">
+                        <label for="name">Nome Completo *</label>
+                        <input type="text" id="name" name="name" required placeholder="Digite seu nome completo">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">E-mail *</label>
+                        <input type="email" id="email" name="email" required placeholder="seu@email.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Telefone *</label>
+                        <input type="tel" id="phone" name="phone" required placeholder="(11) 99999-9999">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cpf">CPF *</label>
+                        <input type="text" id="cpf" name="cpf" required placeholder="000.000.000-00">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="car">Veículo de Interesse *</label>
+                        <select id="car" name="car" required>
+                            <option value="">Selecione o veículo</option>
+                            <option value="Ferrari SF90 Stradale - R$ 6.200.000">Ferrari SF90 Stradale - R$ 6.200.000</option>
+                            <option value="Rolls-Royce Droptail - R$ 125.000.000">Rolls-Royce Droptail - R$ 125.000.000</option>
+                            <option value="Rolls-Royce Spectre - R$ 7.500.000">Rolls-Royce Spectre - R$ 7.500.000</option>
+                            <option value="Porsche 911 GT3 RS Mansory - R$ 3.820.500">Porsche 911 GT3 RS Mansory - R$ 3.820.500</option>
+                            <option value="Aston Martin Valkyrie - R$ 20.000.000">Aston Martin Valkyrie - R$ 20.000.000</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="payment">Forma de Pagamento Preferencial *</label>
+                        <select id="payment" name="payment" required>
+                            <option value="">Selecione a forma de pagamento</option>
+                            <option value="a-vista">À Vista (desconto especial)</option>
+                            <option value="financiamento-12x">Financiamento 12x</option>
+                            <option value="financiamento-24x">Financiamento 24x</option>
+                            <option value="financiamento-36x">Financiamento 36x</option>
+                            <option value="financiamento-48x">Financiamento 48x</option>
+                            <option value="financiamento-60x">Financiamento 60x</option>
+                            <option value="consorcio">Consórcio Premium</option>
+                            <option value="leasing">Leasing Executivo</option>
+                            <option value="troca">Troca + Financiamento</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="income">Renda Mensal Aproximada</label>
+                        <select id="income" name="income">
+                            <option value="">Selecione sua faixa de renda</option>
+                            <option value="50k-100k">R$ 50.000 - R$ 100.000</option>
+                            <option value="100k-200k">R$ 100.000 - R$ 200.000</option>
+                            <option value="200k-500k">R$ 200.000 - R$ 500.000</option>
+                            <option value="500k-1m">R$ 500.000 - R$ 1.000.000</option>
+                            <option value="1m+">Acima de R$ 1.000.000</option>
+                            <option value="confidencial">Prefiro não informar</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="current-car">Possui Veículo para Troca?</label>
+                        <select id="current-car" name="current-car">
+                            <option value="nao">Não possuo veículo para troca</option>
+                            <option value="nacional-popular">Veículo Nacional Popular</option>
+                            <option value="nacional-premium">Veículo Nacional Premium</option>
+                            <option value="importado-luxo">Veículo Importado de Luxo</option>
+                            <option value="superesportivo">Superesportivo</option>
+                            <option value="classico">Veículo Clássico/Coleção</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="urgency">Prazo para Aquisição</label>
+                        <select id="urgency" name="urgency">
+                            <option value="imediato">Imediato (até 30 dias)</option>
+                            <option value="curto">Curto prazo (1-3 meses)</option>
+                            <option value="medio">Médio prazo (3-6 meses)</option>
+                            <option value="longo">Longo prazo (6-12 meses)</option>
+                            <option value="flexible">Flexível</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="services">Serviços Adicionais de Interesse</label>
+                        <div style="display: grid; gap: 0.5rem; margin-top: 0.5rem;">
+                            <label style="display: flex; align-items: center; gap: 0.5rem; font-weight: normal;">
+                                <input type="checkbox" name="services" value="test-drive"> Test-Drive Exclusivo
+                            </label>
+                            <label style="display: flex; align-items: center; gap: 0.5rem; font-weight: normal;">
+                                <input type="checkbox" name="services" value="personalizacao"> Personalização Premium
+                            </label>
+                            <label style="display: flex; align-items: center; gap: 0.5rem; font-weight: normal;">
+                                <input type="checkbox" name="services" value="entrega-vip"> Entrega VIP em Domicílio
+                            </label>
+                            <label style="display: flex; align-items: center; gap: 0.5rem; font-weight: normal;">
+                                <input type="checkbox" name="services" value="manutencao"> Plano de Manutenção Premium
+                            </label>
+                            <label style="display: flex; align-items: center; gap: 0.5rem; font-weight: normal;">
+                                <input type="checkbox" name="services" value="seguro"> Seguro Exclusivo
+                            </label>
+                            <label style="display: flex; align-items: center; gap: 0.5rem; font-weight: normal;">
+                                <input type="checkbox" name="services" value="track-day"> Participação em Track Days
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="comments">Comentários Adicionais</label>
+                        <textarea id="comments" name="comments" placeholder="Compartilhe suas preferências, dúvidas ou requisitos especiais..."></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label style="display: flex; align-items: center; gap: 0.5rem; font-weight: normal;">
+                            <input type="checkbox" name="privacy" required>
+                            Li e aceito os <a href="#" style="color: var(--accent-gold);" onclick="alert('Política de Privacidade - Simulação educacional')">termos de privacidade</a> e autorizo o contato para finalização da simulação *
+                        </label>
+                    </div>
+
+                    <div class="form-group">
+                        <label style="display: flex; align-items: center; gap: 0.5rem; font-weight: normal;">
+                            <input type="checkbox" name="newsletter">
+                            Desejo receber newsletters exclusivas com lançamentos e eventos VIP
+                        </label>
+                    </div>
+
+                    <button type="submit" class="submit-button">
+                        Finalizar Simulação
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <section class="section" style="background: var(--primary-color); margin: 6rem 0; padding: 6rem 2rem; border-radius: 30px;">
+            <div class="section-header">
+                <h2 class="section-title">Próximos <span style="color: var(--accent-gold);">Passos</span></h2>
+                <p class="section-subtitle">O que acontece após a simulação</p>
+            </div>
+
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-icon" style="color: var(--accent-gold);">1️⃣</div>
+                    <h3>Análise Personalizada</h3>
+                    <p>Nossa equipe analisa seu perfil e preferências para preparar uma proposta exclusiva e personalizada.</p>
+                </div>
+
+                <div class="value-card">
+                    <div class="value-icon" style="color: var(--accent-gold);">2️⃣</div>
+                    <h3>Contato Especializado</h3>
+                    <p>Um consultor especialista entrará em contato em até 24 horas para agendar uma reunião exclusiva.</p>
+                </div>
+
+                <div class="value-card">
+                    <div class="value-icon" style="color: var(--accent-gold);">3️⃣</div>
+                    <h3>Experiência VIP</h3>
+                    <p>Visita ao showroom com apresentação do veículo, test-drive e finalização dos detalhes da aquisição.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" style="background: linear-gradient(135deg, #2c2c2c 0%, #1a1a1a 100%); color: white; margin: 6rem 0; padding: 6rem 2rem; border-radius: 30px;">
+            <div class="section-header">
+                <h2 class="section-title" style="color: white;">Garantias <span style="color: var(--accent-gold);">Exclusivas</span></h2>
+                <p class="section-subtitle" style="color: rgba(255,255,255,0.8);">Sua tranquilidade é nossa prioridade</p>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 3rem;">
+                <div class="value-card" style="background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.2);">
+                    <div class="value-icon">🔒</div>
+                    <h3 style="color: white;">Privacidade Total</h3>
+                    <p style="color: rgba(255,255,255,0.8);">Seus dados são protegidos com criptografia de nível bancário e nunca compartilhados com terceiros.</p>
+                </div>
+
+                <div class="value-card" style="background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.2);">
+                    <div class="value-icon">✅</div>
+                    <h3 style="color: white;">Procedência Garantida</h3>
+                    <p style="color: rgba(255,255,255,0.8);">Certificação completa de autenticidade e histórico, com garantia de procedência legal.</p>
+                </div>
+
+                <div class="value-card" style="background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.2);">
+                    <div class="value-icon">🎯</div>
+                    <h3 style="color: white;">Sem Compromisso</h3>
+                    <p style="color: rgba(255,255,255,0.8);">A simulação é gratuita e sem qualquer compromisso de compra. Transparência total no processo.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-header">
+                <h2 class="section-title">Formas de <span style="color: var(--accent-gold);">Pagamento</span></h2>
+                <p class="section-subtitle">Flexibilidade financeira para sua aquisição de luxo</p>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem; margin-top: 3rem;">
+                <div class="value-card" style="border-left: 5px solid var(--accent-gold); padding: 2rem;">
+                    <h3>💰 Pagamento à Vista</h3>
+                    <p><strong>Desconto especial</strong> para pagamento integral<br>
+                    • Desconto de até 5% do valor total<br>
+                    • Processamento prioritário<br>
+                    • Entrega em até 15 dias úteis</p>
+                </div>
+
+                <div class="value-card" style="border-left: 5px solid #4CAF50; padding: 2rem;">
+                    <h3>💳 Financiamento Premium</h3>
+                    <p><strong>Até 60x</strong> com taxas preferenciais<br>
+                    • Taxas a partir de 0,89% ao mês<br>
+                    • Entrada a partir de 20%<br>
+                    • Aprovação em 48 horas</p>
+                </div>
+
+                <div class="value-card" style="border-left: 5px solid #2196F3; padding: 2rem;">
+                    <h3>🏦 Consórcio Exclusivo</h3>
+                    <p><strong>Sem juros</strong> e valores menores<br>
+                    • Parcelas fixas sem correção<br>
+                    • Possibilidade de antecipação<br>
+                    • Fundo de reserva incluso</p>
+                </div>
+
+                <div class="value-card" style="border-left: 5px solid #FF9800; padding: 2rem;">
+                    <h3>🔄 Troca Garantida</h3>
+                    <p><strong>Avaliação justa</strong> do seu veículo atual<br>
+                    • Avaliação por especialistas<br>
+                    • Processo simplificado<br>
+                    • Complemento financiado</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" style="background: var(--primary-color); margin: 4rem 0; padding: 6rem 2rem; border-radius: 30px; text-align: center;">
+            <h2 class="section-title">Dúvidas sobre a <span style="color: var(--accent-gold);">simulação</span>?</h2>
+            <p style="font-size: 1.2rem; color: var(--text-light); margin: 2rem 0 3rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+                Nossa equipe de especialistas está disponível para esclarecer qualquer questão sobre o processo de aquisição.
+            </p>
+            
+            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                <a href="contato.html" class="cta-button">
+                    Falar com Especialista
+                    <span>💬</span>
+                </a>
+                <a href="catalogo.html" class="cta-button" style="background: transparent; color: var(--accent-gold); border: 2px solid var(--accent-gold);">
+                    Ver Mais Veículos
+                    <span>🏎️</span>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">Imperial <span>Motors</span></div>
+            <p class="footer-text">"Excelência sobre Rodas" - A mais exclusiva boutique automotiva da América Latina</p>
+            
+            <div class="footer-links">
+                <a href="sobre.html">Sobre</a>
+                <a href="catalogo.html">Catálogo</a>
+                <a href="esg.html">ESG</a>
+                <a href="contato.html">Contato</a>
+                <a href="compra.html">Simular Compra</a>
+            </div>
+            
+            <p style="margin-top: 2rem; opacity: 0.6; font-size: 0.9rem;">
+                © 2024 Imperial Motors. Todos os direitos reservados. | Avenida Europa, São Paulo - SP<br>
+                <em>Conteúdo fictício para fins educacionais</em>
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
